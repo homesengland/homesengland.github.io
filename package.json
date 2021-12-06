@@ -1,0 +1,14 @@
+{
+  "name": "digitalplaybook",
+  "version": "1.0.0",
+  "description": "Digital Playbook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rumman Amin",
+  "license": "ISC",
+  "dependencies": {
+    "govuk-frontend": "^3.14.0"
+  }
+}

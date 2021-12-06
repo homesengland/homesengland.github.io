@@ -1,0 +1,32 @@
+---
+title: Weeknotes
+---
+
+{% include breadcrumbs.html %}
+
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-l">Weeknotes</h2>
+          {% assign weeknote = site.weeknotes | sort: 'date' %}
+					{% for weeknote in site.weeknotes reversed %}
+            <article  class="govuk-body">
+              <p class="govuk-body"><a href="{{ weeknote.url }}" class="govuk-link">{{ weeknote.title }}</a></p>
+            </article>
+          {% endfor %}
+
+        </div>
+        <div class="govuk-grid-column-one-third">
+
+        {% include related.html %}
+
+        </div>
+
+      </div>
+
+      {% include feedback.html %}
+
+    </main>
+  </div>

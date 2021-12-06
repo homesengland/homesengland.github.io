@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+        {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/">Home</a></li>
+        {% if page.collection == 'weeknotes' %}
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/weeknotes.html">Weeknotes</a></li>
+        <li class="govuk-breadcrumbs__list-item">{{ page.title }}</li>
+        {% elsif page.collection == 'playbook' %}
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/playbook.html">Playbook</a></li>
+        <li class="govuk-breadcrumbs__list-item">{{ page.title }}</li>
+        {% else %}
+        <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="/blog.html">Blog</a></li>
+        <li class="govuk-breadcrumbs__list-item">{{ page.title }}</li>
+        {% endif %}
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <article  class="govuk-body">
+          <h2 class="govuk-heading-l">{{ page.title }}</h2>
+          <!-- <p class="byline author vcard">
+            {{ page.date | date_to_string }}
+            {% assign author = site.authors | where: 'short_name', page.author | first %}
+            {% if author %}
+              - <a href="{{ author.url }}">{{ author.name }}</a>
+            {% endif %}
+          </p> -->
+          <!-- <p class="byline author vcard">
+            <span class="govuk-visually-hidden">Posted by:</span>
+            <span class="author url fn" rel="author">{{ page.author }}</span>,
+            <span class="govuk-visually-hidden">Posted on:</span>
+            <time class="updated" datetime="2020-10-02" pubdate="">{{ page.date | date_to_string }}</time>
+          </p> -->
+          {% if page.collection == 'weeknotes' %}
+          <p class="byline author vcard">
+            <span class="govuk-visually-hidden">Posted by:</span>
+            <span class="author url fn" rel="author">{{ page.author }}</span>
+            <!-- <span class="govuk-visually-hidden">Posted on:</span>
+            <time class="updated" datetime="2020-10-02" pubdate="">{{ page.date | date_to_string }}</time> -->
+          </p>
+          {% else %}
+          <p class="byline author vcard">
+            <span class="govuk-visually-hidden">Posted by:</span>
+            <span class="author url fn" rel="author">{{ page.author }}</span>,
+            <span class="govuk-visually-hidden">Posted on:</span>
+            <time class="updated" datetime="2020-10-02" pubdate="">{{ page.date | date_to_string }}</time>
+          </p>
+          {% endif %}
+          {{ content }}
+        </article>
+      </div>
+      <div class="govuk-grid-column-one-third">
+
+        {% include related.html %}
+
+      </div>
+    </div>
+  </main>
+  {% include feedback.html %}
+</div>
