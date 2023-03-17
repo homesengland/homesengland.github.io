@@ -6,10 +6,10 @@ title: Accessibility Statement
 # Accessibility Statement
 {: .govuk-heading-xl}
 
-This accessibility statement applies to the Digital Playbook: [https://digitalplaybook.github.io](https://digitalplaybook.github.io)
+This accessibility statement applies to the Digital Playbook: [https://homesengland.github.io](https://homesengland.github.io)
 {: .govuk-body}
 
-This website is run by Rumman Amin.
+This website is run by Homes England.
 {: .govuk-body}
 
 We are always working to improve our website and want as many people as possible to be able to access and use it. For example, that means you should be able to:
@@ -38,7 +38,7 @@ We know some parts of this website are not fully accessible:
 <br>
 
 ## How to request content in an accessible format
-If you need information in a different format, for example large print or accessible PDF, email [hello@rummanamin.co.uk](hello@rummanamin.co.uk) and tell us:
+If you need information in a different format, for example large print or accessible PDF, email [Homes England Delivery Community](deliverymanagers@homesengland.gov.uk) and tell us:
 {: .govuk-body}
 
 - the web address (URL) of the content
@@ -49,7 +49,7 @@ If you need information in a different format, for example large print or access
 <br>
 
 ## Reporting accessibility problems with this website
-If you find any problems that are not listed on this page, or you think we’re not meeting the accessibility requirements, please email [hello@rummanamin.co.uk](hello@rummanamin.co.uk) so that we can fix the issue.
+If you find any problems that are not listed on this page, or you think we’re not meeting the accessibility requirements, please email [Homes England Delivery Community](deliverymanagers@homesengland.gov.uk) so that we can fix the issue.
 {: .govuk-body}
 <br>
 
