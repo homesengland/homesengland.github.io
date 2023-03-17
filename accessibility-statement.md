@@ -59,7 +59,7 @@ The Equality and Human Rights Commission (EHRC) is responsible for enforcing the
 <br>
 
 ## Technical information about this website’s accessibility
-Rumman Amin is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
+Homes England is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
 {: .govuk-body}
 <br>
 
@@ -72,7 +72,7 @@ This website is partially compliant with the Web Content Accessibility Guideline
 This statement was prepared on 22 April 2021. It was last reviewed on 22 April 2021.
 {: .govuk-body}
 
-This website was last tested on 22 April 2021. The test was carried out by the Digital Land team.
+This website was last tested on 22 April 2021. The test was carried out by the Digital team.
 {: .govuk-body}
 
 We checked most pages on our site for compliance against the Web Content Accessibility Guidelines (WCAG v2.0 and 2.1). We plan to get a third-party supplier to run a full accessibility audit of our website soon.
